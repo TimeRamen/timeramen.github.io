@@ -107,7 +107,7 @@ function newColour(){
 
 function stringColour(r,g,b){
 	//whiteFont = (r < 55 && g < 55) ||(r < 55 && b < 65)||(b < 65 && g < 55);
-	whiteFont = (r < 128 && g < 128 && b < 128;
+	whiteFont = (r < 128 && g < 128 && b < 128);
 	if(whiteFont){
 		body.style.color = "white";
 	}else{
