@@ -1,0 +1,102 @@
+button {
+	font-family: 'Amatic SC', cursive;
+	border-radius: 12px;
+	font-size: 20px;
+}
+body{
+	font-family: 'Amatic SC', cursive;
+	transition:all 1s;
+}
+
+input {
+    margin: .5rem 0;
+    padding: .5rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+	width : 44.4px;
+	border-right: none;
+	border-top-right-radius: 0%;
+	border-bottom-right-radius: 0%;
+}
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+.inputBorder{
+	padding: .5rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+	padding-bottom: .9rem;
+	padding-top: .9rem;
+	border-left: none;
+	border-top-left-radius: 0%;
+	border-bottom-left-radius: 0%;
+}
+
+.top{
+	margin-top: 2%;
+}
+
+.body{
+	
+	padding-top : 8%;
+	text-align: center;
+	padding-bottom : 5%;
+	font-size: 25px;
+}
+
+/*EXACT SAME CLASSES, WHY*/
+.hidden{
+	display : none;
+}
+
+.hider{
+	display : none;
+}
+
+.helphider{
+	display : none;
+}
+/*--------*/
+
+.jumbotron{
+	margin-top: 6%;
+	background-color:rgba(150, 150, 150, 0.2);
+	transition:all 1s;
+}
+
+.question{
+	font-size: 40px; /*250%*/
+	margin-top : 1%;
+}
+
+.toggler{
+	font-size: 40px;
+	text-align : right;
+	margin-top : 1%;
+	transition:all 1s;
+	
+}
+
+.btn:focus {
+  outline: none;
+}
+
+#right{
+	text-align : right;
+}
+
+#left{
+	text-align : left;
+}
+
+#centre{
+	text-align : center;
+}
