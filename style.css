@@ -33,17 +33,18 @@ iframe {
   }
 }
 /*FIX THIS PLEASE.*/
+/*
 @media only screen and (max-device-width: 1080px) {
     .apps{display:none;}
 }
-
+*/
 @font-face{
 	font-family: "Crayon";
-	src: url("Resources/Crayon.ttf");
+	src: url("/Resources/Crayon.ttf");
 }
 
 #landpage{
-	background: url("Resources/DSC09636.jpg");
+	background: url("/Resources/DSC09636.jpg");
 	background-size: cover;
 	background-position : center;
 }
@@ -102,7 +103,7 @@ iframe {
 }
 
 .boyIcon{
-	background: url("Resources/boy.png");
+	background: url("/Resources/boy.png");
     background-size: cover;
 	height: 19px;
 	width: 19px;
