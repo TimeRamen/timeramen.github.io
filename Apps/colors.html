@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	
+	<link rel="shortcut icon" href="App-Resources/favicon-color.ico" type="image/x-icon">
+	<link rel="icon" href="App-Resources/favicon-color.ico" type="image/x-icon">
+	
+	
+	<link rel="stylesheet" href="colors.css" type="text/css">
+	
+	<title>Random Colour Generator</title>
+		
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row top">
+		<div class="col" id="left">
+			<i class="fas fa-question-circle question"></i>
+		</div>
+		<div class="col" id="right">
+			<i class="fas fa-toggle-off toggler"></i>
+		</div>
+	</div>
+	
+	<div class = "jumbotron helphider">
+		<ul>
+		<li><i class="fas fa-question-circle"></i> - Shows the different features of this application.</li>
+		<li><i class="fas fa-toggle-off"></i> - Basic mode. Click to toggle to advanced mode.</li>
+		<li><i class="fas fa-toggle-on"></i> - Advanced mode. Toggle it to test it out!</li>
+		<li><button class = "btn btn-secondary btn-sm">Random colour</button> - Basic random colour generator.</li>
+		<li class="hider"><button class = "btn btn-light btn-sm hider">Light colour</button> - Only generates a colour within rgb(200,200,200) and upwards.</li>
+		
+		<li class="hider"><button class = "btn btn-dark btn-sm hider">Dark colour</button> - Only generates a colour within rgb(55,55,55) and downwards.</li>
+		
+		
+		
+		<li class="hider">
+		<label>RED: </label>
+			<input type="number"/><i class="fas fa-unlock inputBorder"></i>
+		<label>GREEN: </label>
+			<input type="number"/><i class="fas fa-unlock inputBorder"></i>
+		<label>BLUE: </label>
+			<input type="number"/><i class="fas fa-unlock inputBorder"></i>
+			
+		 - Number inputs for colour channels, lock to fix the value, scroll to change the value.
+		</li>
+
+		<li><button class="btn btn-outline-secondary btn-sm"><i class="fas fa-caret-left"></i></button> - Goes to previous randomised colour.</li>
+
+
+		<li><button class="btn btn-outline-secondary btn-sm"><i class="fas fa-caret-right"></i></button> - Returns to latest randomised colour.</li>
+		</ul>
+	</div>
+
+	<div class = "body">
+		
+		<h1>Change The Colour</h1>
+		<h2>RGB: <span id="colour">rgb(255,255,255)</span> </h2>
+		<h2>Hexadecimal: #<span id="hex">FFFFFF</span> </h2>
+		
+		
+		
+		
+		
+		
+		
+		<button id="light" class = "btn btn-light hider">Light colour</button>
+		<button id="random" class = "btn btn-secondary">Random colour</button>
+		<button id="dark" class = "btn btn-dark hider">Dark colour</button>
+	<div class="hider">
+		<label for="red">RED: </label>
+			<input type="number" id="red" name="red" placeholder="255" min="0" max="255" required=""/><i class="fas fa-unlock inputBorder" id = "redLock"></i>
+	</div>
+	<div class="hider">	
+		<label for="green">GREEN: </label>
+			<input type="number" id="green" name="green" placeholder="255" min="0" max="255" required=""/><i class="fas fa-unlock inputBorder" id = "greenLock"></i>
+	</div>
+	<div class="hider">	
+		<label for="blue">BLUE: </label>
+			<input type="number" id="blue" name="blue" placeholder="255" min="0" max="255" required=""/><i class="fas fa-unlock inputBorder" id = "blueLock"></i>
+	</div>
+	<div>
+		<button class="hidden btn btn-outline-secondary" id="previous"><i class="fas fa-caret-left"></i></button>
+
+		<button class="hidden btn btn-outline-secondary" id="next"><i class="fas fa-caret-right"></i></button>
+	</div>
+
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	
+	</div>
+</div>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script type= "text/javascript" src="colors.js"></script>
+
+</body>
+</html>
