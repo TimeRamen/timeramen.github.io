@@ -39,11 +39,11 @@ iframe {
 
 @font-face{
 	font-family: "Crayon";
-	src: url("resources/Crayon.ttf");
+	src: url("Resources/Crayon.ttf");
 }
 
 #landpage{
-	background: url("resources/DSC09636.jpg");
+	background: url("Resources/DSC09636.jpg");
 	background-size: cover;
 	background-position : center;
 }
@@ -95,9 +95,20 @@ iframe {
 	height: 100%;
 	position: absolute;
 	
-}.appLink{
+}
+.appLink{
 	z-index: 10;
 	top: 53420%;
+}
+
+.boyIcon{
+	background: url("Resources/boy.png");
+    background-size: cover;
+	height: 19px;
+	width: 19px;
+	display: inline-block;
+	margin-bottom: -2px;
+	
 }
 
 .linkApp{
