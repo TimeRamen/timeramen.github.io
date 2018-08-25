@@ -23,7 +23,7 @@
 </head>
 
 
-<body id="landpage">	
+<body id="appsPage">
 
 	<!--Default sticky navbar from Bootstrap-->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -42,7 +42,7 @@
 					</li>
 					<li class="nav-item">
 						<!--If you are a potential employer-->
-						<a class="nav-link" href="portfolio">Portfolio</a>
+						<a class="nav-link active" href="portfolio">Portfolio</a>
 					</li>
 					<!--Dropright menu that I made myself :). Doesn't work with too many things inside but gets the job done with a couple icons.-->
 					<li class="nav-item dropright" >
@@ -74,39 +74,18 @@
 		</div>
 	</nav>
 	
+	
+	
+	<!--Warning bar-->
+	<nav class="navbar warning">
+	  <span class="warning-text">
+		Under construction.
+	  </span>
+	</nav>
+
 
 	
-
-	<!--Landing page-->
-	<div id="landing">
-		<h1>
-		TAIMUR RAHMAN
-		</h1>
-		<h5>Welcome To My Websight</h5>
-		<!--h6><em>This is my webpage for employers to peruse and for friends to enjoy. I'm from Bangladesh and I'm 19 years old.
-		</em></h6-->
-		<!--
-		
-		There should be two buttons here.
-		One of which should point that away and the other points that away
-		One goes to portfolio, the other goes to personal.
-		
-		Structure it so that navbar is no longer needed in the main page.
-		
-		So it will be like:
-		
-		TR
-		WTMW
-		
-		<- Portfolio | Personal ->
-		
-		Links without the expand right menu
-		
-		Changelog at the bottom (and i guess can be ommitted from the navbar, which i will change to a centre strip.
-		
-		-->
-	</div>
-
+	
 	
 	
 	<!--jQuery-->

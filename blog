@@ -21,10 +21,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css">
 		
 </head>
-
-
-<body id="landpage">	
-
+<body>
 	<!--Default sticky navbar from Bootstrap-->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 		<div class="container">
@@ -43,6 +40,10 @@
 					<li class="nav-item">
 						<!--If you are a potential employer-->
 						<a class="nav-link" href="portfolio">Portfolio</a>
+						<!--Trying to implement a breadcrumb
+						>
+						<a class="nav-link active" href="blog">Blog</a>
+						-->
 					</li>
 					<!--Dropright menu that I made myself :). Doesn't work with too many things inside but gets the job done with a couple icons.-->
 					<li class="nav-item dropright" >
@@ -74,39 +75,48 @@
 		</div>
 	</nav>
 	
-
 	
-
-	<!--Landing page-->
-	<div id="landing">
-		<h1>
-		TAIMUR RAHMAN
-		</h1>
-		<h5>Welcome To My Websight</h5>
-		<!--h6><em>This is my webpage for employers to peruse and for friends to enjoy. I'm from Bangladesh and I'm 19 years old.
-		</em></h6-->
-		<!--
+	
+	
+	
+	
+	<div class="container">
+	
+	
+	
+	
+		<div class="jumbotron jumbosite" id="blogland">
+			<h1>My WriteUps</h1>
+		</div>
 		
-		There should be two buttons here.
-		One of which should point that away and the other points that away
-		One goes to portfolio, the other goes to personal.
-		
-		Structure it so that navbar is no longer needed in the main page.
-		
-		So it will be like:
-		
-		TR
-		WTMW
-		
-		<- Portfolio | Personal ->
-		
-		Links without the expand right menu
-		
-		Changelog at the bottom (and i guess can be ommitted from the navbar, which i will change to a centre strip.
-		
-		-->
+		<div class="row">
+			<div class="col-md-6 blogpost">
+				<h2>Blogpost</h2>
+				<h4>10th Sept 2018</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus augue ut augue dictum fringilla. Cras in fermentum dui. Fusce condimentum nec orci a fermentum. Maecenas nec vulputate velit. Nam vitae nulla sem. Aliquam ac dui egestas, facilisis ex ac, tincidunt nisi. Mauris vestibulum dolor sed interdum placerat. Suspendisse maximus mauris ut dapibus interdum. Quisque fringilla imperdiet rhoncus. Donec rhoncus vehicula leo nec lobortis. Suspendisse volutpat enim est, non tincidunt nisl venenatis et. Duis faucibus pulvinar rhoncus. Proin sed consequat ipsum, a gravida massa. </p>
+			</div>
+			<div class="col-md-6 blogpost">
+				<h2>Blogpost</h2>
+				<h4>10th Sept 2018</h4>
+				<p>Integer vel justo vitae mauris consectetur ultricies. Nulla tristique tristique lorem, non blandit lectus ultricies sodales. Vivamus et sagittis enim, eu lacinia neque. Nulla vulputate felis vitae magna placerat, vitae volutpat orci convallis. Curabitur placerat ligula ac tellus finibus, ac tristique augue elementum. Suspendisse eleifend vitae arcu a cursus. Quisque ex nisl, ultrices et mi at, condimentum condimentum est. Integer est eros, consequat sit amet gravida a, scelerisque eu ante. Vivamus eleifend erat eget urna hendrerit, eget vehicula ligula cursus. Maecenas vel lectus erat. Vivamus dapibus urna erat, eu tempor est lacinia nec. Fusce ultrices quis arcu vitae convallis. </p>
+			</div>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	</div>
-
+	
+	
+	
 	
 	
 	<!--jQuery-->

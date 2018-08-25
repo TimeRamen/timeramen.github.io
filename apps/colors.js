@@ -94,9 +94,10 @@ function rgbRand (length,bottom){
 			bInput.value = b;
 		}
 	}
+	if(!bLocked && !gLocked && !rLocked){
 	rgbArray.push([r,g,b]);
 	currentIndex = rgbArray.length - 1;
-	
+	}
 	
 };
 
