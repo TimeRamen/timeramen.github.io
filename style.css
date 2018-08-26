@@ -8,12 +8,101 @@ body{
 	padding-top: 4.5rem;
 	font-family: 'Asap Condensed', sans-serif;
 	transition: all 1s;
+	
+	
+	background:  linear-gradient(90deg, #99bd73 10%, #ddeebb 50%, #a9d074 90%);
+
+	/*background: linear-gradient(287deg, rgba(225,100,116,.4), rgba(255,0,200,0) 70%),
+				linear-gradient(112deg, rgba(235,250,40,.6), rgba(0,255,70,0) 80%),
+				linear-gradient(336deg, rgba(0,0,255,.5), rgba(40,0,255,0) 50%);*/
 }
+
+
 
 iframe {
     border: none;
     width: 100%;
 }
+
+a {
+    color: #886622;
+}
+
+a:hover {
+    color: #554433;
+}
+
+.bg-dark {
+    background: linear-gradient(90deg, #322d21 70%, #323224) !important;
+}
+.jumbotron{
+	background: linear-gradient(#749254, #668844, #678058);
+}
+.btn-secondary {
+    background:  linear-gradient(#335522 , #385c1f , #335522 );
+    border:  #587b21;
+}
+.card{
+	background: linear-gradient(90deg, #bccabb,#a0b3b1, #88aa99);/*, #a0b3b1, #bccabb);*/
+}
+.btn-outline-secondary:hover {
+    color: #fff;
+    background: linear-gradient(#bccabb , #a0b3b1, #88aa99);
+    border-color: #6c757d;
+}
+/*
+Colours:
+
+
+http://www.colorfavs.com/palettes/128482/
+
+#99bd73	light desaturated green
+#678058	dark desaturated green
+#322d21	very dark very desaturated green
+#385c1f	very dark saturated green
+#a0b3b1	greyish blue
+
+
+
+https://www.canva.com/color-palette/
+
+Olive Drab
+#587b21
+Copy
+Dark Khaki
+#a9d074
+Copy
+Dark Sea Green
+#bccabb
+Copy
+Dark Olive Green
+#749254
+Copy
+Dark Olive Green
+#323224
+
+http://www.palettefx.com/
+
+#99bb66		light green, desaturated
+#668844		dark green, desaturated
+#554433		black green brown
+#335522		dark green, saturated
+#aabbcc		pale sea green / greyish blue
+
+
+*/
+/*
+.jumbotron{
+	background-color: #FFFDAD;
+}
+h1,h2 {
+	background: linear-gradient(45deg, #BB96FF, #FFFEDD);
+}
+
+p{
+	background: linear-gradient(45deg, #FFD6F0, #FFFEDD);
+}
+*/
 
 @include media-breakpoint-up(sm) {
   html {
@@ -49,7 +138,7 @@ iframe {
 	background-position : center;
 }
 #title{
-	color : #FEFEFE ;
+	color : #a0b3b1 ;
 	font-family : Crayon;
 	font-size: 1.3rem;
 	/*text-transform: uppercase;*/
@@ -58,7 +147,7 @@ iframe {
 	font-family : Crayon;
 }
 #expandright{
-	background-color : #343a40;
+	background-color : #322d21;
 	margin-left : .2rem;
 	letter-spacing : 2px;
 	border : none;
@@ -67,12 +156,25 @@ iframe {
 .navbar .active{
 	border-bottom: 2px solid rgba(0,0,0,0.4);
 }
+
+
+
+Colorfavs	Canva		PaletteFX
+#99bd73		#a9d074		#99bb66		light green, desaturated
+#678058		#749254		#668844		dark green, desaturated
+#322d21		#323224		#554433		black green brown
+#385c1f		#587b21		#335522		dark green, saturated
+#a0b3b1		#bccabb		#aabbcc		pale sea green / greyish blue
+
+
+
+
 */
 
 #landing{
 	text-align: center;
 	padding-top: 20%;
-	color : white;
+	color : #a0b3b1;
 	text-shadow:	0px 4px 2px rgba(0,0,0,1),
 					0px 9px 6px rgba(0,0,0,0.3),
 					0px 20px 14px rgba(0,0,0,0.1);
@@ -80,7 +182,8 @@ iframe {
 #landing h1{
 	font-family : Crayon;
 	font-size: 4em;
-	background-color: rgba(0,0,0,0.1)
+	background-color: rgba(0,0,0,0.1);
+	color : #a0b3b1;
 }
 #appsPage{
 	padding-top: 3.5rem;
