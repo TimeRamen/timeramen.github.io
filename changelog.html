@@ -85,7 +85,7 @@
 		<h1>Ver 1.0-1.4</h1>
 		</button>
 			<div class="collapse" id="version1">
-			  <div class="card card-body">
+			  <div class="card card-body change-body">
     			<h1>Ver 1.0 - Aug 1st</h1>
 					<ul>
 						<li>HTML file</li>
@@ -123,7 +123,7 @@
 		<h1>Ver 2.0-2.x</h1>
 		</button>
 			<div class="collapse" id="version2">
-			  <div class="card card-body">
+			  <div class="card card-body change-body">
 			  
 			  
 			<h1>Ver 2.0 - 11th Aug</h1>
@@ -189,20 +189,17 @@
 					<li>Fixed issue with relative paths and file names so that it works fine on Github Pages.</li>
 					<li>Used the colour palette from the landpage dragonfly using  <a target="_blank" href="http://www.colorfavs.com/palettes/128482/">Colorfavs</a>, <a target="_blank" href="https://www.canva.com/color-palette/">Canva</a> and <a target="_blank" href="http://www.palettefx.com/">PaletteFX</a> to make a more fitting CSS (with linear-gradient) compared to the bootstrap default.</li>
 				</ul>
-			<h3><em>Upcoming Ver 2.5</em></h3>
+			<h3>Ver 2.6 - 28th Aug</h3>
 				<ul>
-					<li>Overhaul works.html by introducing an image gallery and a header that states "I also take pictures, sometimes."</li>
-					<li>clean up the text</li>
-					<li>use consistent fonts and sizes</li>
-					<li>Fix the grid system to center the images in the grid</li>
-					<li>make the headers in works a bit more prominent</li>
-					<li>add card and circle borders to display C++ and HTML</li>
-					<li>change the landing page to have a button pointing left and a button pointing right that transition into the pages</li>
-					<li>add tooltips to homepage indicating what the two buttons do</li>
-					<li>pages work on mobile without needing to scroll</li>
-					<li>Remove copywrited material, or if needed just add the copyright tags to the image.</li>
-					
+					<li>Web applications page has been overhauled with a new look using newly learnt positioning techniques.</li>
+					<li>Album 3X3 has been included in web apps page.</li>
+					<li>Included JavaScript for web apps page to get the apps button working.</li>
+					<li>Tweaked a few colours and included background colours for browsers that do not support gradients.</li>
+					<li>Used <a href="https://jsfiddle.net/mles/wsq489o0/embedded/result/">responsive square images</a> to make album web app more responsive.</li>
+					<li>Changed portfolio page to look a bit more appealing and structured using bootstrap's grid.</li>
+					<li>Included new button on changelog to accomodate upcoming ideas.</li>
 				</ul>
+			
 			  
 			  
 			  
@@ -211,7 +208,35 @@
 		
 		
 		
-		
+		<button class="btn btn-secondary btn-lg btn-block" type="button" data-toggle="collapse" data-target="#upcoming" aria-expanded="false" aria-controls="upcoming">
+		<h1><em>Upcoming</em></h1>
+		</button>
+			<div class="collapse" id="upcoming">
+			  <div class="card card-body change-body">
+					<h3><em>Upcoming Ver 2.5</em></h3>
+					<ul>
+						<li>Overhaul works.html by introducing an image gallery and a header that states "I also take pictures, sometimes."</li>
+						<li>clean up the text</li>
+						<li>use consistent fonts and sizes</li>
+						<li>Fix the grid system to center the images in the grid</li>
+						<li>make the headers in works a bit more prominent</li>
+						<li>add card and circle borders to display C++ and HTML</li>
+						<li>change the landing page to have a button pointing left and a button pointing right that transition into the pages</li>
+						<li>add tooltips to homepage indicating what the two buttons do</li>
+						<li>pages work on mobile without needing to scroll</li>
+						<li>Remove copywrited material, or if needed just add the copyright tags to the image.</li>
+						
+					</ul>
+					<h1><em>Upcoming Ver 3.0</em></h1>
+					<ul>
+					<li>Use JavaScript</li>
+					</ul>
+					<h1><em>Upcoming Ver 4.0</em></h1>
+					<ul>
+					<li>Use jQuery</li>
+					</ul>
+			  </div>
+			</div>
 		
 		
 		
@@ -221,14 +246,7 @@
 
 
 
-			<h1><em>Upcoming Ver 3.0</em></h1>
-			<ul>
-			<li>Use JavaScript</li>
-			</ul>
-			<h1><em>Upcoming Ver 4.0</em></h1>
-			<ul>
-			<li>Use jQuery</li>
-			</ul>
+			
 			<h1><strong>Bugs and Issues</strong></h1>
 			<ul>
 			<li>Items do not center in hobbies page</li>
