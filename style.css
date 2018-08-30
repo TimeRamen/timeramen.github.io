@@ -119,18 +119,6 @@ http://www.palettefx.com/
 
 
 */
-/*
-.jumbotron{
-	background-color: #FFFDAD;
-}
-h1,h2 {
-	background: linear-gradient(45deg, #BB96FF, #FFFEDD);
-}
-
-p{
-	background: linear-gradient(45deg, #FFD6F0, #FFFEDD);
-}
-*/
 
 @include media-breakpoint-up(sm) {
   html {
@@ -177,27 +165,17 @@ p{
 	border : none;
 }
 /*
-.navbar .active{
-	border-bottom: 2px solid rgba(0,0,0,0.4);
-}
-
-
-
 Colorfavs	Canva		PaletteFX
 #99bd73		#a9d074		#99bb66		light green, desaturated
 #678058		#749254		#668844		dark green, desaturated
 #322d21		#323224		#554433		black green brown
 #385c1f		#587b21		#335522		dark green, saturated
 #a0b3b1		#bccabb		#aabbcc		pale sea green / greyish blue
-
-
-
-
 */
 
 #landing{
 	text-align: center;
-	padding-top: 18%;
+	padding-top: 15%;
 	color : #f0f0f0;
 	text-shadow:	0px 4px 2px rgba(0,0,0,1),
 					0px 9px 6px rgba(0,0,0,0.3),
