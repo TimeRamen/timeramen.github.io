@@ -15,8 +15,23 @@ var elapsedTime;
 var oldHour = 0;
 var oldMinute = 0;
 
+var greenButtons = document.querySelectorAll("button.green");
+var orangeButtons = document.querySelectorAll("button.orange");
+var purpleButtons = document.querySelectorAll("button.purple");
+var redButtons = document.querySelectorAll("button.red");
+
+var greenDisplay = document.querySelector("th.green");
+var orangeDisplay = document.querySelector("th.orange");
+var purpleDisplay = document.querySelector("th.purple");
+var redDisplay = document.querySelector("th.red");
+
+var greenElapse = 0;
+var orangeElapse = 0;
+var purpleElapse = 0;
+var redElapse = 0;
 
 var lastButtonPressed = "first";
+var colourPressed = "";
 
 init();
 
@@ -24,11 +39,55 @@ function init(){
 	
 	printDate();
 	inActiveAll();
+	
 	initialiseButtons();
+	initialiseColourButtons();
 	
 	
 }
 
+function initialiseColourButtons(){
+	for(var i = 0; i < greenButtons.length ; i ++){
+	greenButtons[i].addEventListener("click",function(){
+		colourPressed = "green";
+	})
+}
+	for(var i = 0; i < orangeButtons.length ; i ++){
+	orangeButtons[i].addEventListener("click",function(){
+		colourPressed = "orange";
+	})
+}
+	for(var i = 0; i < purpleButtons.length ; i ++){
+	purpleButtons[i].addEventListener("click",function(){
+		colourPressed = "purple";
+	})
+}
+	for(var i = 0; i < redButtons.length ; i ++){
+	redButtons[i].addEventListener("click",function(){
+		colourPressed = "red";
+	})
+}
+	
+}
+
+function updateColourElapsed(colour,eltime){
+	if(colour === "green"){
+		greenElapse += eltime;
+		greenDisplay.textContent = greenElapse;
+	}else if(colour === "orange"){
+		orangeElapse += eltime;
+		orangeDisplay.textContent = orangeElapse;
+	}else if(colour === "purple"){
+		purpleElapse += eltime;
+		purpleDisplay.textContent = purpleElapse;
+	}else if(colour === "red"){
+		redElapse += eltime;
+		redDisplay.textContent =  redElapse;
+	}else{
+		console.log ("ERROR");
+	}
+	
+}
 
 
 
@@ -110,7 +169,20 @@ function hourToMinute(hour){
 
 function initialiseButtons(){
 	for( var i = 0 ; i < activities.length ; i ++){
-		activities[i].addEventListener("click",function(){
+		activities[i].addEventListener("click",buttonPress);
+	}
+}
+
+
+function inActiveAll(){
+	for(var i = 0 ; i < activities.length ; i++ ){
+		activities[i].classList.remove("active");
+	}
+}
+
+
+
+function buttonPress(){
 		
 		
 			if(lastButtonPressed !== this.innerHTML && lastButtonPressed !== "END"){
@@ -125,12 +197,14 @@ function initialiseButtons(){
 				var differenceMinute = minute-oldMinute;
 				if(lastButtonPressed !== "first"){
 					elapsedTime = hourToMinute(differenceHour)+differenceMinute;
+					updateColourElapsed(colourPressed,elapsedTime);
 				}
 				endTime = printTime(oldHour,oldMinute);
 				
 				if(table.innerHTML !== ""){
 					document.querySelector(".endtime").textContent = endTime;
 					document.querySelector(".elapsed").textContent = elapsedTime;
+					
 					document.querySelector(".endtime").classList.remove("endtime");
 					document.querySelector(".elapsed").classList.remove("elapsed");
 				}
@@ -151,12 +225,4 @@ function initialiseButtons(){
 				activitiesArray.push(actObj);
 				addTableObj(actObj);
 			}
-	});
 	}
-}
-
-function inActiveAll(){
-	for(var i = 0 ; i < activities.length ; i++ ){
-		activities[i].classList.remove("active");
-	}
-}
