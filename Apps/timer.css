@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 body{
@@ -135,4 +136,126 @@ button:hover{
 #end{
 	/*min-width: 210px;*/
 	width: 90%;
+=======
+
+
+body{
+	font-family: 'Exo 2', sans-serif;
+	background-color: rgba(10,10,10,0.9);
+}
+
+div{
+	float: left;
+	margin: 5%;
+	margin-top: 5%;
+	width: 40%;
+}
+@media only screen and (max-width: 640px) {
+	div{
+	width: 80%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	body{
+	font-size: 0.8em;
+	}
+	
+	button{
+	font-size: 0.7em;
+	
+}
+	
+}
+
+.body{
+	margin: 0;
+	width: 100%;
+	min-height: 240px;
+	background-color: rgba(240,240,240,0.9);
+	border-radius: 0 12px 12px 12px;
+	border: 1px solid grey;
+}
+
+
+table{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.column{
+	width: 25%;
+	margin: 0;
+	text-align: center;
+}
+
+.green{
+	background-color: rgb(100,200,100);
+}
+
+.orange{
+	background-color: rgb(250,150,50);
+}
+
+.purple{
+	background-color: rgb(150,50,250);
+}
+
+.red{
+	background-color: rgb(255,100,100);
+}
+
+.fcolumn{
+	width: 50%;
+	margin: 0;
+	text-align: center;
+}
+
+#takeSpace{
+	min-height: 60px;
+}
+
+h1{
+	border: 1px solid grey;
+	border-bottom: none;
+	border-radius: 12px 12px 0px 0px;
+	padding: 10px;
+	padding-left: 15px;
+	margin-bottom: 0;
+	background-color: rgba(220,220,220,0.9);
+	max-width: 180px;
+}
+
+h2{
+	padding-left: 15px;
+}
+
+
+button{
+	font-family: 'Exo 2', sans-serif;
+	width: 80%;
+	min-height: 40px;
+	margin: 0 auto;
+	background-color: rgba(200,200,200,0.5);
+	border-radius: 12px;
+	border: 1px solid grey;
+	margin: 10px;
+	transition: background 0.5s;
+	
+}
+
+button:hover{
+	background-color: rgba(200,200,200,0.8);
+}
+
+.active{
+	background-color: rgba(10,10,30,0.9);
+	color : white;
+}
+
+
+#end{
+	/*min-width: 210px;*/
+	width: 90%;
+>>>>>>> be6419f5cd09fd3238e88846798c59884fac28eb
 }
