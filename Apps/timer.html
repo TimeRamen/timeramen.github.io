@@ -3,7 +3,8 @@
 <html>
 	<head>
 		<title>Timer</title>
-		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="timer.css">
 	</head>
 	<body>
@@ -14,28 +15,29 @@
 			<div class="body">
 			
 				<div class="column">
-					<button class="activity">Thesis</button>
+					<button class="activity green">Thesis<!--span class="hidden">Green</span--></button>
 				</div>
 				
 				<div class="column">
-					<button class="activity">Gym</button>
-					<button class="activity">Job</button>
+					<button class="activity orange">Gym</button>
+					<button class="activity orange">Job</button>
 				</div>
 				
 				<div class="column">
-					<button class="activity">Comic</button>
-					<button class="activity">Game</button>
+					<button class="activity purple">Comic</button>
+					<button class="activity purple">Game</button>
+					<button class="activity purple">Video</button>
+					<button class="activity purple">Doodle</button>
 				</div>
 				
 				<div class="column">
-					<button class="activity">Food</button>
-					
-					<button class="activity">Shower</button>
-					
-					<button class="activity">Break</button>
+					<button class="activity red">Food</button>
+					<button class="activity red">Shower</button>
+					<button class="activity red">Break</button>
 				</div>
 				
 				<div class="fcolumn" id="takeSpace">
+					<button class="refresh"><i class="fas fa-sync-alt"></i></button>
 				</div>
 				<div class="fcolumn">
 					<button id = "end">END</button>
@@ -59,6 +61,12 @@
 				
 				<table>
 					<thead>
+						<tr>
+							<th class="green">0</th>
+							<th class="orange">0</th>
+							<th class="purple">0</th>
+							<th class="red">0</th>
+						</tr>
 						<tr>
 							<th>Activity</th>
 							<th>Time Started</th>

@@ -2,12 +2,13 @@
 
 body{
 	font-family: 'Exo 2', sans-serif;
+	background-color: rgba(10,10,10,0.9);
 }
 
 div{
 	float: left;
 	margin: 5%;
-	margin-top: 5%;
+	margin-top: 3%;
 	width: 40%;
 }
 @media only screen and (max-width: 640px) {
@@ -30,8 +31,8 @@ div{
 .body{
 	margin: 0;
 	width: 100%;
-	min-height: 240px;
-	background: linear-gradient(90deg , rgba(240,240,240,0.9) , rgba(0,0,0,0));
+	min-height: 302px;
+	background-color: rgba(240,240,240,0.9);
 	border-radius: 0 12px 12px 12px;
 	border: 1px solid grey;
 }
@@ -49,13 +50,43 @@ table{
 	text-align: center;
 }
 
+.green{
+	background-color: rgb(100,200,100);
+}
 
+.orange{
+	background-color: rgb(250,150,50);
+}
 
+.purple{
+	background-color: rgb(150,50,250);
+}
+
+.red{
+	background-color: rgb(255,100,100);
+}
 
 .fcolumn{
 	width: 50%;
 	margin: 0;
 	text-align: center;
+}
+
+.refresh{
+	width: initial;
+	border: none;
+	background: none;
+	font-size: x-large;
+	
+}
+
+.rotated{
+	transition: transform 1s;
+	transform: rotate(360deg);
+}
+
+.hidden{
+	display: none;
 }
 
 #takeSpace{
@@ -69,7 +100,7 @@ h1{
 	padding: 10px;
 	padding-left: 15px;
 	margin-bottom: 0;
-	background: linear-gradient(90deg , rgba(220,220,220,0.9) , rgba(0,0,0,0));
+	background-color: rgba(220,220,220,0.9);
 	max-width: 180px;
 }
 
@@ -92,13 +123,14 @@ button{
 }
 
 button:hover{
-	background-color: rgba(100,100,100,0.9);
+	background-color: rgba(200,200,200,0.8);
 }
 
 .active{
-	background-color: rgb(100,100,100);
+	background-color: rgba(10,10,30,0.9);
 	color : white;
 }
+
 
 #end{
 	/*min-width: 210px;*/
