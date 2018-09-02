@@ -67,6 +67,14 @@ function refresh(){
 	colourPressed = "";
 	table.innerHTML = "";
 	entireTable.style.borderBottom = "none";
+	greenElapse = 0;
+	orangeElapse = 0;
+	purpleElapse = 0;
+	redElapse = 0;
+	greenDisplay.textContent = "";
+	orangeDisplay.textContent = "";
+	purpleDisplay.textContent = "";
+	redDisplay.textContent = "";
 }
 
 function initialiseAllButtons(){
@@ -139,6 +147,8 @@ function endTimer(){
 	if(lastButtonPressed !== "first"){
 		//set last button to end so that no other buttons can be pressed.
 		lastButtonPressed = "END";
+		//sets elapsed time
+		setElapsed();
 		//calls convertTable function 
 		convertTable();
 		//sets a border at the bottom
@@ -248,7 +258,18 @@ function convertTable(){
 		document.querySelector(".elapsed").classList.remove("elapsed");
 	}
 }
-
+function setElapsed(){
+	//if lastButtonPressed is not first
+	if(lastButtonPressed !== "first"){
+		var differenceHour = hour - oldHour;
+		var differenceMinute = minute-oldMinute;
+		//it assigns an elapsed time
+		elapsedTime = hourToMinute(differenceHour)+differenceMinute;
+		//and updates the text content of the colour grid as well
+		updateColourElapsed(colourPressed,elapsedTime);
+		//endTime = printTime(oldHour,oldMinute);
+	}
+}
 
 
 
@@ -265,15 +286,7 @@ function buttonPress(){
 				startTime = printTime(hour,minute);
 				
 				//if button is not the first button pressed...
-				if(lastButtonPressed !== "first"){
-					var differenceHour = hour - oldHour;
-					var differenceMinute = minute-oldMinute;
-					//it assigns an elapsed time
-					elapsedTime = hourToMinute(differenceHour)+differenceMinute;
-					//and updates the text content of the colour grid as well
-					updateColourElapsed(colourPressed,elapsedTime);
-					//endTime = printTime(oldHour,oldMinute);
-				}
+				setElapsed();
 				//calls convertTable function 
 				convertTable();
 				//assign old numbers after elapsed calculations have been made

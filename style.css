@@ -1,479 +1,87 @@
-html{
-	height : 100%;
-	font-size: 1rem;
-}
-
-body{
-	/*min-height: 75rem;*/
-	padding-top: 4.5rem;
-	font-family: 'Asap Condensed', sans-serif;
-	transition: all 1s;
-	background-color: #ddeebb;
-	
-	background:  linear-gradient(90deg, #99bd73 10%, #ddeebb 50%, #a9d074 90%);
-
-	/*background: linear-gradient(287deg, rgba(225,100,116,.4), rgba(255,0,200,0) 70%),
-				linear-gradient(112deg, rgba(235,250,40,.6), rgba(0,255,70,0) 80%),
-				linear-gradient(336deg, rgba(0,0,255,.5), rgba(40,0,255,0) 50%);*/
-}
-
-
-
-iframe {
-    border: none;
-    width: 100%;
-}
-
-a {
-    color: #886622;
-}
-
-a:hover {
-    color: #554433;
-}
-
-.bg-dark {
-	background-color: #322d21;
-    background: linear-gradient(#322d21, #323224) !important;
-}
-.jumbotron{
-	background-color: #749254;
-	background: linear-gradient(#749254, #668844, #678058);
-}
-.btn-secondary {
-	background-color:  #385c1f;
-    background:  linear-gradient(#335522 , #385c1f , #335522 );
-    border:  #587b21;
-}
-.btn-secondary.focus, .btn-secondary:focus {
-    box-shadow: 0 0 0 .2rem rgba(0,0,0,0);
-}
-
-.card{
-	background-color:#bccabb;
-	background: linear-gradient(90deg, #bccabb,#a0b3b1, #88aa99);/*, #a0b3b1, #bccabb);*/
-}
-
-.card h1,.card h3{
-	background-color: #88aa99;
-	background: linear-gradient(90deg, #88aa99, rgba(0,0,0,0));
-	padding-left: 1.25rem;
-}
-
-.card ul {
-    padding-left: 4.25rem;
-}
-.change-body {
-    padding-left: 0;
-}
-
-.btn-outline-secondary:hover {
-    color: #fff;
-	background-color: #a0b3b1;
-    background: linear-gradient(#bccabb , #a0b3b1, #88aa99);
-    border-color: #6c757d;
-}
-
-.btn-outline-secondary:focus {
-    box-shadow: 0 0 0 .2rem rgba(0,0,0,0);
-}
-
-/*
-Colours:
-
-
-http://www.colorfavs.com/palettes/128482/
-
-#99bd73	light desaturated green
-#678058	dark desaturated green
-#322d21	very dark very desaturated green
-#385c1f	very dark saturated green
-#a0b3b1	greyish blue
-
-
-
-https://www.canva.com/color-palette/
-
-Olive Drab
-#587b21
-Copy
-Dark Khaki
-#a9d074
-Copy
-Dark Sea Green
-#bccabb
-Copy
-Dark Olive Green
-#749254
-Copy
-Dark Olive Green
-#323224
-
-http://www.palettefx.com/
-
-#99bb66		light green, desaturated
-#668844		dark green, desaturated
-#554433		black green brown
-#335522		dark green, saturated
-#aabbcc		pale sea green / greyish blue
-
-
-*/
-
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
-
-@font-face{
-	font-family: "Crayon";
-	src: url("/Resources/Crayon.ttf");
-}
-
 #landpage{
-	background: url("/Resources/DSC09636.JPG");
-	background-size: cover;
-	background-position : center;
-	overflow: hidden;
+	background-color: rgb(240,240,240);
+	padding: 4%;
+	padding-top: 0;
+	padding-bottom: 0;
+	overflow-x : hidden;
 }
-#title{
-	color : #a0b3b1 ;
-	font-family : Crayon;
-	font-size: 1.3rem;
-	/*text-transform: uppercase;*/
+#landpage div{
+	float: left;
 }
-.taimur{
-	font-family : Crayon;
-}
-#expandright{
-	background-color : rgba(0,0,0,0);
-	margin-left : .2rem;
-	letter-spacing : 2px;
-	border : none;
-}
-/*
-Colorfavs	Canva		PaletteFX
-#99bd73		#a9d074		#99bb66		light green, desaturated
-#678058		#749254		#668844		dark green, desaturated
-#322d21		#323224		#554433		black green brown
-#385c1f		#587b21		#335522		dark green, saturated
-#a0b3b1		#bccabb		#aabbcc		pale sea green / greyish blue
-*/
-
-#landing{
+#landpage div.heading,#landpage div.body,#landpage div.footer{
+	width: 99.25%;
 	text-align: center;
-	padding-top: 15%;
-	color : #f0f0f0;
-	text-shadow:	0px 4px 2px rgba(0,0,0,1),
-					0px 9px 6px rgba(0,0,0,0.3),
-					0px 20px 14px rgba(0,0,0,0.1);
-
+	padding: 0.25%;
+	margin: 0.125%;
 }
-#landing h1{
-	font-family : Crayon;
-	font-size: 4em;
-	background-color: rgba(0,0,0,0.1);
-	color : #f3f3f3;
+#landpage div.heading{
+	/*font-size: 2.5em;*/
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#landpage div.heading h1, #landpage div.heading p{
+	/*font-size: 2.5em;*/
+	margin-top: 0;
+	margin-bottom: 0;
 	word-spacing: 1rem;
 	letter-spacing: .2rem;
 }
-#landing h5{
+#landpage div.heading p{
 	text-transform: uppercase;
-	word-spacing: 1rem;
-	letter-spacing: .2rem;
-	margin-top: 1.1%;
-	margin-bottom: 21px;
 }
-#landing .btn-secondary {
-    background-color: rgba(56,92,31,0.3);
-    
-    border-bottom: 3px solid rgba(10,10,10,0.2);
-	min-width: 120px;
-	font-weight: bold;
+#landpage div.portfolio, #landpage div.personal{
+	width: 35%;
+	height: inherit;
+	padding-top: 15%;
+	padding-bottom: 15%; 
 }
-
-#landing #personalButton {
-	background:	linear-gradient(90deg,  rgba(56,92,31,0.2), rgba(51,85,32,0.4)),
-				linear-gradient(rgba(56,92,31,0.2), rgba(51,85,32,0.4));
-	border-radius: 20px 100% 100% 20px;
-	border-right: 5px solid rgba(0,0,0,0.2);
+#landpage div button{
+	border: none;
+	background: none;
+	font-size: 1.3em;
 }
-#landing #portfolioButton {
-	background:	linear-gradient(90deg, rgba(51,85,32,0.4), rgba(56,92,31,0.2)),
-				linear-gradient(rgba(56,92,31,0.2), rgba(51,85,32,0.4));
-	border-radius: 100% 20px 20px  100%;
-	border-left: 5px solid rgba(0,0,0,0.2);
+#landpage div.portfolio{
+	text-align: right;
 }
-#landing #links{
+#landpage div.personal{
+	text-align: left;
+}
+#landpage div.my-picture{
+	width: 30%;
+	position : relative;
+}
+#landpage div.my-picture img{
+	position : absolute;
+	left: 0;
+	width: 100%;
+}
+#landpage div.my-picture img#colour{
+	opacity:0.6;
+}
+#landpage div.my-picture img#shade{
+	opacity:0.5;
+}
+#landpage div.my-picture img#done{
+	position: static;
+	opacity:0;
+}
+#landpage div.my-picture div#take-space{
+	width: 100%;
+	height: 100%;
+	min-width: 400px;
+	min-height: 500px;
+	opacity: 0;
+}
+#landpage div.footer{
 	word-spacing: 1rem;
 	letter-spacing: .2rem;
 	font-size: 1.5em;
-	margin-top: 1.1%;
 }
-
-#landing a{
-	color: #f0f0f0;
-}
-#landing a:hover{
+#landpage a{
+	color: #101010;
 	text-decoration: none;
 }
-
-#landing #changelink{
-	position: absolute;
-	background-color: rgba(56,92,31,0.3);
-	background:	linear-gradient(rgba(51,85,32,0.4) ,rgba(56,92,31,0.1));
-	bottom: 0px;
-	left: 0;
-	right: 0;
-	border: 1px solid rgba(56,92,31,0.2);
-	border-bottom: none;
-	border-right: 3px solid rgba(56,92,31,0.2);
-	border-left: 3px solid rgba(56,92,31,0.2);
-	padding: 12px;
-	width: 110px;
-	margin : 0 auto;
-	border-radius: 30% 30% 0% 0%;
-}
-
-.wrong{
-	text-decoration: red wavy underline;
-}
-
-/*radial-gradient(rgba(51,85,32,0.4), rgba(56,92,31,0.5))*/
-
-#appsPage{
-	padding-top: 3.5rem;
-}
-
-.alignLeft{
-	text-align: left;
-}
-.alignRight{
-	text-align: right;
-}
-
-
-.app{
-	padding: 0;
-	position: relative;
-}
-
-.app a{
-	position : absolute;
-	bottom: 0;
-}
-.app iframe{
-	position : absolute;
-	top: 0;
-}
-
-.takeSpace{
-	/*height: 576px;*/
-	height: 617px;
-	width: 900px;
-	opacity: 0;
-}
-
-.appList{
-	min-height: 205.6666666666666666px;
-	background-color: rgba(255,255,255,0.7);
-	border: 1px solid rgba(0,0,0,.5);
-	padding-top: 1.25rem;
-	/*overflow: auto;*/
-	
-}
-
-.activeApp{
-	background-color: rgba(0,0,0,0.7);
-	color: white;
-}
-
-.appList h2{
-	text-transform: uppercase;
-}
-.appList p{
-	font-size: 0.9em;
-}
-
-#scrollApp{
-	overflow-y : auto;
-}
-
-.boyIcon{
-	background: url("/Resources/boy.png");
-    background-size: cover;
-	height: 19px;
-	width: 19px;
-	display: inline-block;
-	margin-bottom: -2px;
-	
-}
-
-.linkApp{
-	border: 1px solid rgba(0,0,0,0.4);
-	background-color: white;
-	padding: 12px;
-	border-top-right-radius: 15px;
-	-webkit-border-top-right-radius: 15px;
-	-moz-border-radius-topright: 15px;
-	
-}
-.jumbosite{
-	
-	
-	font-size: 4em;
-	text-align: center;
-	color : white;
-	text-shadow:	0px 4px 2px rgba(0,0,0,1),
-					0px 9px 6px rgba(0,0,0,0.3),
-					0px 20px 14px rgba(0,0,0,0.1);
-}
-
-.warning {
-    background-color: #DC0715 !important;
-	padding: 0;
-}
-
-.warning-text{
-	padding: 4px 0;
-	margin: 0 auto;
-	color: white;
-	display: inline-block;
-	text-transform: uppercase;
-}
-
-.appShowcase{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#blogland{
-	background: url("http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/54/l9/p054l956.jpg");
-	background-size: cover;
-	background-position : bottom;
-}
-
-#imgland{
-	background: url("https://i1.wp.com/www.vaalmeander.co.za/wp-content/uploads/2016/12/Photography.jpg");
-	background-size: cover;
-	background-position : bottom;
-	
-}
-
-#bangla{
-	color : green;
-	background-image: linear-gradient(red,red);
-	background-size: 30% 40%;
-	background-position: center;
-	background-repeat : no-repeat;
-	border-radius : 100%;
-}
-
-#codeBlock{
-	max-width: 800px;
-	margin: 0 auto;
-}
-
-
-
-
-
-.nav-link{
-	color: rgba(255,255,255,.5);
-}
-
-.nav-link:hover{
-	color: rgba(255,255,255,.8);
-}
-
-.circle{
-	min-height: 102px;
-	min-width: 102px;
-	max-height: 152px;
-	max-width: 152px;
-	width: 20%;
-	margin: 2.5%;
-	padding-bottom: 8%;
-	padding-top: 8%;
-	float: left;
-	background-color: red;
-	text-align: center;
-	border-radius: 50%;
-}
-
-.row .img-thumbnail{
-	margin-bottom: 15px;
-}
-
-.blogpost{
-	border: 1px solid silver;
-}
-
-.professional{
-	text-align : center;
-}
-
-.pagin{
-	margin : 0 auto;
-	width: 170px;
-}
-
-
-.item{
-	/*width : 20%;*/
-	float : left;
-	margin : 0 auto;
-	position: relative;
-	margin-top : 15px;
-	margin-bottom : 15px;
-}
-
-.card p{
-	text-align : center;
-	font-size : 2em;
-}
-
-.itemimage{
-	display: block;
-	height : 250px;
-	width : 152px;
-	/*width : 20%;*/
-	
-}
-
-.caption {
-  position: absolute;
-  border-radius : 0px 0px 0px 0px ;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  height : 250px;
-  width : 152px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 14px;
-  padding: 20px;
-  text-align: center;
-}
-
-/* When you mouse over the container, fade in the overlay title */
-.item:hover .caption {
-  opacity: 1;
+#landpage a:hover{
+	color: #111111;
+	text-decoration: none;
 }
