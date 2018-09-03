@@ -125,3 +125,6 @@ a:hover{
 	color: #111111;
 	text-decoration: none;
 }
+#changelog a{
+	color: #7C563D;
+}
