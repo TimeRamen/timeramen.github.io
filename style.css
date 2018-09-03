@@ -60,6 +60,29 @@ button{
 	margin: 4%;
 	padding: 1%;
 }
+@media only screen and (max-width: 535px) {
+    .cell{
+	width: 90%;
+	margin: 4%;
+	padding: 1%;
+	}
+	.grid{
+		width: 100%;
+	}
+	#portfolio .right{
+		display: none;
+	}
+	#portfolio .left{
+		display: block !important;
+	}
+	#portfolio .my-picture, #personal .my-picture{
+		margin-right: 42%;
+		margin-left: 42%;
+	}
+}
+.left{
+	display: none;
+}
 .my-picture{
 	width: 30%;
 	position : relative;
