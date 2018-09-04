@@ -78,12 +78,18 @@ button{
 	margin-right: auto;
 	*/
 }
+.cell iframe{
+	width: 80%;
+	min-height: 600px;
+	border: none;
+	border-radius: 10px;
+}
 .hidden{
 	display: none;
 }
 @media only screen and (max-width: 535px) {
     .cell{
-	width: 90%;
+	width: 90% !important;
 	}
 	.grid{
 		width: 100%;

@@ -3,8 +3,18 @@
 var cellHeading = document.querySelectorAll(".cell h3");
 var cell = document.querySelectorAll(".cell");
 var clicked = false;
+var hiddenText = document.querySelectorAll(".cell span.hidden");
+var appButton = document.querySelectorAll(".cell button");
+var appDisplay = document.querySelector("iframe");
 
-initialiseCells();
+initialisePage();
+
+
+function initialisePage(){
+	initialiseCells();
+	initialiseAppButtons();
+}
+
 
 function initialiseCells(){
 	for(var i = 0; i < cellHeading.length ; i++){
@@ -12,19 +22,27 @@ function initialiseCells(){
 			var arr = Array.prototype.slice.call(cellHeading);
 			toggleAllCells();
 			cell[arr.indexOf(this)].classList.remove("hidden");
-			clicked = !clicked;
+			hiddenText[arr.indexOf(this)].classList.toggle("hidden");
 			
-			//FIX THIS NOW.
-			if(!(window.matchMedia( "(min-width: 535px)"))){
-				if(clicked){
+			clicked = !clicked;
+			if(clicked){
 				changeCellWidth(90);
-				}else {
-				changeCellWidth(40);
-				}
 			}else{
+				if((window.matchMedia( "(min-width: 535px)"))){
+					changeCellWidth(40);
+				}else{
 				changeCellWidth(90);
+				}
 			}
 			
+		})
+	}
+}
+
+function initialiseAppButtons(){
+	for(var i = 0; i < appButton.length ; i++){
+		appButton[i].addEventListener("click",function(){
+			appDisplay.src = changeSrc(this.id);
 		})
 	}
 }
@@ -45,4 +63,9 @@ function changeCellWidth(width){
 	for(var i = 0; i < cell.length ; i++){
 		cell[i].style.width = widthString;
 	}
+}
+
+function changeSrc(string){
+	var srcString = "Apps/" + string + ".html";
+	return srcString;
 }

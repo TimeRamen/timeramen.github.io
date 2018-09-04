@@ -1,4 +1,3 @@
-
 /*For INDEX.HTML*/
 var phrase = "Welcome to my website";
 var update = "ght";
