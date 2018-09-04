@@ -6,7 +6,8 @@ var clicked = false;
 var hiddenText = document.querySelectorAll(".cell span.hidden");
 var appButton = document.querySelectorAll(".cell button");
 var appDisplay = document.querySelector("iframe");
-
+var appDescription = document.querySelectorAll(".cell .desc");
+var appLink = document.querySelector(".cell span a");
 initialisePage();
 
 
@@ -42,7 +43,13 @@ function initialiseCells(){
 function initialiseAppButtons(){
 	for(var i = 0; i < appButton.length ; i++){
 		appButton[i].addEventListener("click",function(){
+			deactivateAllButtons();
+			this.classList.add("active");
 			appDisplay.src = changeSrc(this.id);
+			appLink.href = changeSrc(this.id);
+			var appArray = Array.prototype.slice.call(appButton);
+			hideAllDesc();
+			appDescription[appArray.indexOf(this)].classList.remove("hidden");
 		})
 	}
 }
@@ -55,6 +62,18 @@ function hideAllCells(){
 function toggleAllCells(){
 	for(var i = 0; i < cell.length ; i++){
 		cell[i].classList.toggle("hidden");
+	}
+}
+
+function deactivateAllButtons(){
+	for(var i = 0; i < appButton.length ; i++){
+		appButton[i].classList.remove("active");
+	}
+}
+
+function hideAllDesc(){
+	for(var i = 0; i < appDescription.length ; i++){
+		appDescription[i].classList.add("hidden");
 	}
 }
 
