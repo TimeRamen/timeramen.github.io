@@ -1,3 +1,4 @@
+/*For INDEX.HTML*/
 var phrase = "Welcome to my website";
 var update = "ght";
 function stringToArray(string){
@@ -17,7 +18,6 @@ var siteLength = siteArray.length;
 
 var words = document.querySelector("#words");
 var cursor = document.querySelector("#cursor");
-//body#landpage div.heading p span#words
 var i = 0;
 var j = 0;
 var speed = 100;
