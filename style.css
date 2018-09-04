@@ -59,29 +59,23 @@ button{
 	width: 40%;
 	margin: 4%;
 	padding: 1%;
+	background-color: rgb(220,220,220);
+	border-radius: 10px;
+}
+.cell h3{
+	cursor: pointer;
 }
 @media only screen and (max-width: 535px) {
     .cell{
 	width: 90%;
-	margin: 4%;
-	padding: 1%;
 	}
 	.grid{
 		width: 100%;
-	}
-	#portfolio .right{
-		display: none;
-	}
-	#portfolio .left{
-		display: block !important;
 	}
 	#portfolio .my-picture, #personal .my-picture{
 		margin-right: 42%;
 		margin-left: 42%;
 	}
-}
-.left{
-	display: none;
 }
 .my-picture{
 	width: 30%;
@@ -89,6 +83,9 @@ button{
 }
 #portfolio .my-picture, #personal .my-picture{
 	width: 15%;
+}
+#portfolio div{
+	float: right;
 }
 .my-picture img{
 	position : absolute;
