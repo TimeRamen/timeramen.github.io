@@ -92,6 +92,12 @@ button{
 .hidden{
 	display: none;
 }
+.extraContent{
+	width: 100%;
+}
+.alignLeft{
+	text-align: left;
+}
 .active{
 	background: rgb(200,200,200);
 }
