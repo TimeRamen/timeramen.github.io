@@ -3,7 +3,7 @@
 var cellHeading = document.querySelectorAll(".cell h3");
 var cell = document.querySelectorAll(".cell");
 var clicked = false;
-var hiddenText = document.querySelectorAll(".cell div.hidden");
+var hiddenText = document.querySelectorAll(".cell div.extraContent");
 var appButton = document.querySelectorAll(".cell button");
 var appDisplay = document.querySelector("iframe");
 var appDescription = document.querySelectorAll(".cell .desc");
