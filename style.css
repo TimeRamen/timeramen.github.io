@@ -37,6 +37,38 @@ div{
 .heading p{
 	text-transform: uppercase;
 }
+#makeSmaller{
+	margin: 1% 0 1% 0;
+}
+#portfolio .blogPost div{
+	float: left;
+}
+.blogPost{
+	text-align: left;
+	border-radius: 10px;
+	background-color: rgb(190,190,190);
+	margin: 1% 0 1% 0;
+	width: 100%;
+}
+.blogPost h4, .blogPost p{
+	margin: 1%;
+}
+.blogPost .blogThumb{
+	width: 20%;
+	padding: 1%;
+}
+.blogPost .blogThumb img{
+	max-width: 100%;
+	border-radius: 10px;
+}
+.blogPost .blogBody{
+	width: 78%;
+	display: contents;
+}
+.blogPost .blogDate{
+	font-size: 0.8em;
+	colour: rgb(30,30,30);
+}
 .portfolio,.personal{
 	width: 35%;
 	height: inherit;
