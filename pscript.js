@@ -8,7 +8,11 @@ var appButton = document.querySelectorAll(".cell button");
 var appDisplay = document.querySelector("iframe");
 var appDescription = document.querySelectorAll(".cell .desc");
 var appLink = document.querySelector(".cell span a");
+var helpCell = document.querySelector("#helpCell");
 initialisePage();
+
+var defaultHelpMessage = "Click on the cell headings to see more.";
+var clickedHelpMessage = "Click on the cell headings again to go back."
 
 
 function initialisePage(){
@@ -28,7 +32,9 @@ function initialiseCells(){
 			clicked = !clicked;
 			if(clicked){
 				changeCellWidth(90);
+				helpCell.innerHTML = clickedHelpMessage;
 			}else{
+				helpCell.innerHTML = defaultHelpMessage;
 				if((window.matchMedia( "(min-width: 535px)"))){
 					changeCellWidth(40);
 				}else{
