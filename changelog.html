@@ -172,9 +172,42 @@
 					<li>Changed cell width at media breakpoint to !important so that it always resizes.</li>
 					<li>Made it so that iframe doesn't display at media breakpoint.</li>
 				</ul>
+			<h3>Ver 3.2 - 5th Sep</h3>
+				<ul>
+					<li>Used web performance trackers to optimise the site even further. (Thinking of reducing the size of PNG images).</li>
+					<li>Web applications used were:
+						<ul>
+							<li><a href="https://www.powermapper.com/" target="_blank" rel=noreferrer>PowerMapper</a></li>
+							<li><a href="http://quirktools.com/screenfly/" target="_blank" rel=noreferrer>ScreenFly</a></li>
+							<li><a href="https://sitechecker.pro/" target="_blank" rel=noreferrer>SiteChecker</a></li>
+							<li><a href="https://www.1and1.com/website-checker" target="_blank" rel=noreferrer>1and1 WebsiteChecker</a></li>
+							<li><a href="https://www.dareboost.com/en" target="_blank" rel=noreferrer>DareBoost</a></li>
+							<li><a href="https://whatdoesmysitecost.com/" target="_blank" rel=noreferrer>What Does My Site Cost?</a></li>
+							<li><a href="http://nibbler.silktide.com/en" target="_blank" rel=noreferrer>Nibbler</a></li>
+							<li><a href="https://gtmetrix.com/" target="_blank" rel=noreferrer>GTmetrix</a></li>
+							<li><a href="https://testmysite.withgoogle.com/intl/en-gb" target="_blank" rel=noreferrer>TestMySite</a></li>
+							<li><a href="https://tools.pingdom.com/" target="_blank" rel=noreferrer>Pingdom</a></li>
+							<li><a href="https://www.webpagetest.org/" target="_blank" rel=noreferrer>WebPageTest</a></li>
+						</ul>
+					</li>
+					<li>Best practices from aforementioned website checkers were used, for example:
+						<ul>
+							<li>target="_blank" links have been given attribute rel=noreferrer to prevent security leaks.</li>
+							<li>All image tags have descriptive alt text.</li>
+							<li>Language has been defined to be English.</li>
+							<li>Intrinsic width set to images so the structure of the website is the same even if it fails to load.</li>
+							<li>Changing hidden spans to div because header's are not appropriate child elements to span.</li>
+							<li>Pages have seperate titles.</li>
+						</ul>
+					</li>
+					<li>Put some text below the picture on portfolio and personal pages that tell the viewer how to use the site. Changes when cells are clicked</li>
+					<li>New sliding animations for links in different pages.</li>
+				</ul>
 			<h1><strong>Bugs and Issues</strong></h1>
 				<ul>
-					<li>None.</li>
+					<li>Screenreaders cannot read icon files.</li>
+					<li>Images exceed 100kb and are fairly big.</li>
+					<li>Reduce cache size.</li>
 				</ul>
 
 	</body>
