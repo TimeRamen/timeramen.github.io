@@ -3,11 +3,11 @@
 var cellHeading = document.querySelectorAll(".cell h3");
 var cell = document.querySelectorAll(".cell");
 var clicked = false;
-var hiddenText = document.querySelectorAll(".cell span.hidden");
+var hiddenText = document.querySelectorAll(".cell div.hidden");
 var appButton = document.querySelectorAll(".cell button");
 var appDisplay = document.querySelector("iframe");
 var appDescription = document.querySelectorAll(".cell .desc");
-var appLink = document.querySelector(".cell span a");
+var appLink = document.querySelector(".cell div a");
 var helpCell = document.querySelector("#helpCell");
 initialisePage();
 
