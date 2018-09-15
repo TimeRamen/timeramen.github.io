@@ -7,7 +7,7 @@ var hiddenText = document.querySelectorAll(".cell div.extraContent");
 var appButton = document.querySelectorAll(".cell button");
 var appDisplay = document.querySelector("iframe");
 var appDescription = document.querySelectorAll(".cell .desc");
-var appLink = document.querySelector(".cell div a");
+var appLink = document.querySelector("#appLink");
 var helpCell = document.querySelector("#helpCell");
 initialisePage();
 
