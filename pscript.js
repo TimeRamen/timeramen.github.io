@@ -9,6 +9,7 @@ var appDisplay = document.querySelector("iframe");
 var appDescription = document.querySelectorAll(".cell .desc");
 var appLink = document.querySelector("#appLink");
 var helpCell = document.querySelector("#helpCell");
+var ageSpan = document.querySelector("#age");
 initialisePage();
 
 var defaultHelpMessage = "Click on the cell headings to see more.";
@@ -18,6 +19,10 @@ var clickedHelpMessage = "Click on the cell headings again to go back."
 function initialisePage(){
 	initialiseCells();
 	initialiseAppButtons();
+	if(ageSpan !== null){
+		ageSpan.textContent = getAge("09/10/1998");
+	}
+	//console.log('age: ' + getAge("09/10/1998"));
 }
 
 
@@ -94,3 +99,15 @@ function changeSrc(string){
 	var srcString = "Apps/" + string + ".html";
 	return srcString;
 }
+
+function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
