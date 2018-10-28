@@ -173,6 +173,9 @@ button{
 	left: 0;
 	width: 100%;
 }
+#map{
+	width: 62%;
+}
 #colour{
 	opacity:0.6;
 }
