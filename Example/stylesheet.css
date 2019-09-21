@@ -1,0 +1,51 @@
+/*
+
+    font-family: 'Volkhov', serif;
+
+    font-family: 'Libre Franklin', sans-serif;
+
+*/
+
+
+
+*{
+	padding: none;
+	margin: none;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Libre Franklin', sans-serif;
+	
+	text-align: center;
+	
+}
+
+h1,h2,h3,h4,h5{
+	font-family: 'Volkhov', serif;
+}
+.section{
+	margin: 0 9%;
+	/*height: 30vh;*/
+}
+
+
+
+
+
+#heading{
+	letter-spacing: 0.19em;
+	text-transform: uppercase;
+}
+
+
+/*Bootstrap overridden styles*/
+
+.navbar-expand-lg .navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+
+    padding: 0 1.2rem;
+}
